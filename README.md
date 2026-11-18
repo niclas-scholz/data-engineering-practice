@@ -2,6 +2,15 @@
 
 Dieses Projekt wurde im Rahmen des WPF-Kurses bearbeitet. Umgesetzt wurden die Aufgaben 1, 2, 3, 4, 8 und 9.
 
+### Kurzreflexion: Gelernt und angewendet
+
+- **Aufgabe 1 – Dateien herunterladen:** Ich habe gelernt, Dateien mit Python über HTTP herunterzuladen, Verzeichnisse programmgesteuert anzulegen und ZIP-Dateien zu verarbeiten. Angewendet habe ich `requests`, `pathlib` und `zipfile`, um die Dateien herunterzuladen, zu entpacken und anschließend aufzuräumen.
+- **Aufgabe 2 – Web Scraping und Pandas:** Ich habe gelernt, HTML-Tabellen automatisiert auszulesen, passende Dateien anhand eines Zeitstempels zu ermitteln und Daten mit Pandas auszuwerten. Angewendet habe ich `pandas.read_html`, den dynamischen Aufbau einer Download-URL sowie die Suche nach dem höchsten Wert in einer CSV-Datei.
+- **Aufgabe 3 – S3- und GZIP-Daten:** Ich habe gelernt, öffentliche Cloud-Daten schrittweise abzurufen, GZIP-Dateien zu entpacken und große Dateien zeilenweise zu verarbeiten. Angewendet habe ich Streaming mit `urllib`, `gzip` und iteratives Lesen, ohne die vollständigen Dateien auf einmal in den Speicher zu laden.
+- **Aufgabe 4 – JSON zu CSV:** Ich habe gelernt, verschachtelte JSON-Daten zu normalisieren und unregelmäßige Verzeichnisstrukturen zu durchsuchen. Angewendet habe ich `os.walk`, `json`, `pandas.json_normalize` und `csv`, um einzelne CSV-Dateien sowie eine zusammengeführte Ausgabe zu erzeugen.
+- **Aufgabe 8 – DuckDB:** Ich habe gelernt, Tabellen mit geeigneten Datentypen zu modellieren und analytische SQL-Abfragen direkt auf Daten auszuführen. Angewendet habe ich DDL, CSV-Import, Gruppierungen, Window Functions sowie den partitionierten Export der Ergebnisse als Parquet-Dateien.
+- **Aufgabe 9 – Polars Lazy API:** Ich habe gelernt, Datenverarbeitung mit Lazy Evaluation effizient und speicherschonend aufzubauen. Angewendet habe ich `scan_csv`, Typkonvertierungen, tägliche und wöchentliche Aggregationen sowie den Vergleich mit der jeweils vorherigen Woche.
+
 ## Data Engineering Practice Problems
 
 One of the main obstacles of Data Engineering is the large
@@ -32,8 +41,8 @@ All the tools and technologies you need will be packaged
   into the `dockerfile` for each exercise.
 
 For each exercise you will need to `cd` into that folder and
-run the `docker build` command, that command will be listed in
-the `README` for each exercise, follow those instructions.
+run the `docker build` command, that command will be listed
+in the `README` for each exercise, follow those instructions.
 
 ### Beginner Exercises
 
@@ -66,7 +75,6 @@ is going to be a little different than the rest. In this problem you will be giv
 `csv` files. You must create a data model / schema to hold these data sets, including indexes,
 then create all the tables inside `Postgres` by connecting to the database with `Python`.
 
-
 ### Intermediate Exercises
 
 #### Exercise 6 - Ingestion and Aggregation with PySpark.
@@ -77,8 +85,7 @@ Best of luck!
 
 #### Exercise 7 - Using Various PySpark Functions
 The [seventh exercise](https://github.com/danielbeach/data-engineering-practice/tree/main/Exercises/Exercise-7) 
-Taking a page out of the previous exercise, this one is focus on using a few of the
-more common build in PySpark functions `pyspark.sql.functions` and applying their
+Taking a page out of the previous exercise, this one is focus on using a few of the more common build in PySpark functions `pyspark.sql.functions` and applying their
 usage to real-life problems.
 
 Many times to solve simple problems we have to find and use multiple functions available
@@ -95,7 +102,6 @@ The [ninth exercise](https://github.com/danielbeach/data-engineering-practice/tr
 Polars is a new Rust based tool with a wonderful Python package that has taken Data Engineering by
 storm. It's better than Pandas because it has both SQL Context and supports Lazy evalutation 
 for larger than memory data sets! Show your Lazy skills!
-
 
 ### Advanced Exercises
 
