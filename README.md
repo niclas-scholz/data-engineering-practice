@@ -1,3 +1,7 @@
+## Bearbeitete Aufgaben im WPF-Kurs
+
+Dieses Projekt wurde im Rahmen des WPF-Kurses bearbeitet. Umgesetzt wurden die Aufgaben 1, 2, 3, 4, 8 und 9.
+
 ## Data Engineering Practice Problems
 
 One of the main obstacles of Data Engineering is the large
